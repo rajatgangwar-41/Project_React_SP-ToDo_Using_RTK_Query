@@ -2,18 +2,17 @@ import ReactDOM from "react-dom/client"
 import App from "./App.jsx"
 import Home from "./Home.jsx"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { ApiProvider } from "@reduxjs/toolkit/query/react"
-
+import { Provider } from "react-redux"
+import { store } from "./store"
 import "./index.css"
-import { api } from "./apiSlice.js"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <ApiProvider api={api}>
+      <Provider store={store}>
         <App />
-      </ApiProvider>
+      </Provider>
     ),
     children: [
       {
