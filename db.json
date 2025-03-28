@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "value": "Buy groceries",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "value": "Finish work project",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "value": "Read a book",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "value": "Exercise",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "value": "Complete Redux",
+      "completed": true
+    }
+  ]
+}
